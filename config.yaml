@@ -1,0 +1,17 @@
+llm:
+  provider: "nexos"
+  endpoint: "https://nexos.ai/v1"
+  api_key: "YOUR_NEXOS_TOKEN_HERE"
+  model: "gpt-4-turbo"
+
+email:
+  smtp_host: "smtp.yourdomain.com"
+  smtp_port: 587
+  username: "agent@yourdomain.com"
+  password: "YOUR_EMAIL_PASSWORD_HERE"
+  use_tls: true
+
+tools:
+  web_search: true
+  data_storage: "sqlite"
+  database_path: "/opt/wholesale_agent/wholesale.db"
