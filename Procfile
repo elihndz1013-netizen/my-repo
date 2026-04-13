@@ -1,1 +1,1 @@
-worker: python price_monitor.py
+worker: python -u price_monitor.py
