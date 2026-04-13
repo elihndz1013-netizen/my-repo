@@ -1,3 +1,4 @@
 oxylabs
 schedule
 pyyaml
+supabase
