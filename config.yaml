@@ -13,5 +13,6 @@ email:
 
 tools:
   web_search: true
-  data_storage: "sqlite"
-  database_path: "/opt/wholesale_agent/wholesale.db"
+  data_storage: "supabase"
+  database_url: "https://rpmpnnwgoknuiikeoals.supabase.co"
+  database_key: "YOUR_SUPABASE_KEY_HERE"
