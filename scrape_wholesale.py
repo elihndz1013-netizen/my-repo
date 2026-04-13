@@ -1,11 +1,14 @@
 from oxylabs import RealtimeClient
 import sys
+import os
 
 def scrape_wholesale_prices(query="wholesale bulk socks"):
     """
     Search Google Shopping for wholesale queries using Oxylabs RealtimeClient.
     """
-    client = RealtimeClient(api_key="YOUR_OXYLABS_KEY_HERE")
+    username = os.environ.get("OXYLABS_USERNAME", "YOUR_OXYLABS_USERNAME_HERE")
+    password = os.environ.get("OXYLABS_PASSWORD", "YOUR_OXYLABS_PASSWORD_HERE")
+    client = RealtimeClient(username=username, password=password)
     try:
         response = client.scrape_search(
             source="google_shopping",
